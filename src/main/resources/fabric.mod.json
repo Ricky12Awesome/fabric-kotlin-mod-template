@@ -1,7 +1,7 @@
 
 {
   "schemaVersion": 1,
-  "id": "example-mod",
+  "id": "$modid",
   "name": "$name",
   "version": "$version",
   "entrypoints": {
@@ -13,6 +13,8 @@
     ]
   },
   "depends": {
-    "fabric-language-kotlin": ">=$kotlinVersion"
+    "fabric-language-kotlin": ">=$kotlinVersion",
+    "fabricloader": ">=0.9.0",
+    "minecraft": "1.16.x"
   }
 }

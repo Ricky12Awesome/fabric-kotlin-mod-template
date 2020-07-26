@@ -8,5 +8,6 @@ pluginManagement {
   }
 }
 
-rootProject.name = "kotlin-example-mod-kt"
+// Can't be '= Info.modid', cause it doesn't work (unresolved reference)
+rootProject.name = "example-mod"
 
