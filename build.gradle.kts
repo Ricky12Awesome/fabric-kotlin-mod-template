@@ -2,6 +2,7 @@ plugins {
   kotlin("jvm") version Jetbrains.Kotlin.version
   kotlin("plugin.serialization") version Jetbrains.Kotlin.version
   id("fabric-loom") version Fabric.Loom.version
+  id("com.matthewprenger.cursegradle") version CurseGradle.version
   `maven-publish`
 }
 
@@ -51,6 +52,12 @@ tasks {
     from(project.tasks["javadoc"])
 
     dependsOn(JavaPlugin.JAVADOC_TASK_NAME)
+  }
+
+  compileKotlin {
+    kotlinOptions {
+      jvmTarget = "1.8"
+    }
   }
 
   processResources {
