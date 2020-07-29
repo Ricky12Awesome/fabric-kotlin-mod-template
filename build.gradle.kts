@@ -54,9 +54,18 @@ tasks {
     dependsOn(JavaPlugin.JAVADOC_TASK_NAME)
   }
 
+  compileJava {
+    targetCompatibility = "1.8"
+    sourceCompatibility = "1.8"
+  }
+
   compileKotlin {
     kotlinOptions {
       jvmTarget = "1.8"
+      freeCompilerArgs = listOf(
+        "-Xopt-in=kotlin.RequiresOptIn",
+        "-Xopt-in=kotlin.ExperimentalStdlibApi"
+      )
     }
   }
 
