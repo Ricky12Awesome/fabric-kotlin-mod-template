@@ -4,11 +4,13 @@
   "id": "$modid",
   "name": "$name",
   "version": "$version",
+  "description": "$description",
+  "authors": ["Your_Name"],
   "entrypoints": {
     "main": [
       {
         "adapter": "kotlin",
-        "value": "org.example.ExampleMod"
+        "value": "com.template.TemplateMod"
       }
     ]
   },

@@ -63,13 +63,12 @@ tasks {
   processResources {
     filesMatching("fabric.mod.json") {
       expand(
-        mapOf(
-          "modid" to Info.modid,
-          "name" to Info.name,
-          "version" to Info.version,
-          "kotlinVersion" to Jetbrains.Kotlin.version,
-          "fabricApiVersion" to Fabric.API.version
-        )
+        "modid" to Info.modid,
+        "name" to Info.name,
+        "version" to Info.version,
+        "description" to Info.description,
+        "kotlinVersion" to Jetbrains.Kotlin.version,
+        "fabricApiVersion" to Fabric.API.version
       )
     }
   }

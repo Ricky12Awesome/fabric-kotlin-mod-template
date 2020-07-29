@@ -1,8 +1,8 @@
-package org.example
+package com.template
 
 import net.fabricmc.api.ModInitializer
 
-object ExampleMod : ModInitializer {
+object TemplateMod : ModInitializer {
   override fun onInitialize() {
     println("It works!")
   }
